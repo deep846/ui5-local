@@ -1,0 +1,37 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="namespace.controller.View1"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	
+			<Page title="Title" >
+				<!--showNavButton="true"-->
+			
+			  	<headerContent>
+			  		<Button text="sort" press="onSort"></Button>
+			  		
+					<Button icon="sap-icon://action" tooltip="Share" press="onPress" />
+					
+				</headerContent>
+				<content>
+				
+							<Toolbar>
+								<SearchField width="100%" search="onSearch" liveChange="onSearch" />
+							
+							</Toolbar>
+					
+				<List id="idList" items="{toolsModel>/tools}" mode="SingleSelectMaster" selectionChange="onSelect">
+						<items>
+							<ObjectListItem icon="{toolsModel>image}"
+							intro="{toolsModel>id}" number="{toolsModel>price}{toolsModel>currency}"  title="{toolsModel>name}">
+								<attributes>
+									<ObjectAttribute text="{toolsModel>use}" title="use"></ObjectAttribute>
+								</attributes>
+								<firstStatus>
+									<ObjectStatus text="{toolsModel>status}" title="status"
+									state="{=${toolsModel>status}==='available'?'Success':'Error'}"></ObjectStatus>
+								</firstStatus>
+							</ObjectListItem>
+						</items>
+					</List>
+				</content>
+			</Page>
+	
+</mvc:View>

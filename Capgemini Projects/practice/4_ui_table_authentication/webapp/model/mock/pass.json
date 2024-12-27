@@ -1,0 +1,20 @@
+{
+    "user" : [
+        {
+            "user" : "Deep",
+            "pass" : "1234"
+        },
+        {
+            "user" : "Disha",
+            "pass" : "4321"
+        },
+        {
+            "user" : "Monika",
+            "pass" : "2314"
+        },
+        {
+            "user" : "Shruti",
+            "pass" : "3355"
+        }
+    ]
+}

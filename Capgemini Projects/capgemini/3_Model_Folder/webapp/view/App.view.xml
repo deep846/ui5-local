@@ -1,0 +1,61 @@
+<mvc:View
+    controllerName="nm.controller.App"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+>
+    <Shell>
+        <App>
+            <pages>
+                <Page title="Test">
+                    <content>
+                        <Panel headerText="This is a test page">
+                            <Label text="Name" />
+                            <Input
+                                id="name"
+                                type="Text"
+                                value="{dd>/Name}"
+                            />
+                            <Label text="Email" />
+                            <Input
+                                id="email"
+                                type="Text"
+                                value="{dd>/Email}"
+                            />
+                            <Label text="Gender" />
+                            <Input
+                                id="gender"
+                                type="Text"
+                                value="{dd>/Gender}"
+                            />
+                            <Label text="User" />
+                            <Input
+                                id="user"
+                                type="Text"
+                                name="User"
+                            />
+                            <Label text="password" />
+                            <Input
+                                id="pass"
+                                type="Text"
+                                name="Password"
+                            />
+                            <Button
+                                text="Get"
+                                press=".onPress"
+                            />
+
+                            <Button
+                                text="Flip"
+                                press=".onPress1"
+                            />
+                            <Button
+                                text="Submit"
+                                press=".onPress3"
+                            />
+                        </Panel>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

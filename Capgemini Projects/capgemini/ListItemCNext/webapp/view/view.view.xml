@@ -1,0 +1,46 @@
+<mvc:View xmlns:f="sap.f"
+    controllerName="nm.controller.view"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+>
+    <Page title="{dd>title}" showNavButton="true" > 
+        <headerContent>
+                <Button icon="sap-icon://action" tooltip="share" text="goTo" press=".onGoToButtonPress"></Button>
+        </headerContent>
+    <content>
+    
+        <Toolbar >
+            <SearchField width="50%" search=".onSearchFieldSearch" liveChange="onSearchFieldSearch"></SearchField>
+            <Button text="Sort by Price Asending" press=".onSortPress" />
+            <Button text="Sort by Price Desceding" press=".onSortPress1" />
+            <Button text="Get Default List" press=".getDefault" />
+            <Button text="Sort ADV" press=".sortAdv" />
+        </Toolbar>
+
+        <List id="idToolsList" items="{dc>/tools}" selectionChange="onToolsListSelectionChange" mode="SingleSelectMaster">
+            <items>
+
+            <ObjectListItem 
+            icon="https://www.bing.com/images/blob?bcid=S.hB1NYKeMIHqxcxoNWLuD9SqbotqVTdP38"
+            intro="{dc>id}"
+            number="{parts:[{path: 'dc>price'},{path:'dc>currency'}], formatter:'.CurrencyFormatter'}"
+            numberTextDirection="Inherit"
+            numberUnit="{dc>currency}"
+            title="{dc>name}"
+            >
+                <attributes>
+                    <ObjectAttribute text="{dc>use}" title="Use" ></ObjectAttribute>
+                </attributes>
+                <firstStatus>
+                    <ObjectStatus title="supplierId" text="{dc>supplierId}" state="Success"></ObjectStatus>
+                </firstStatus>
+                <secondStatus>
+                     <ObjectStatus title="Status" text="{dc>status}" state="{=${dc>status}==='available'?'Success':'Error'}"></ObjectStatus>
+                </secondStatus>
+            </ObjectListItem>
+            </items>
+        </List>
+    </content>
+    
+    </Page>
+</mvc:View>

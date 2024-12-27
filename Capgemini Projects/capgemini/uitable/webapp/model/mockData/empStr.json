@@ -1,0 +1,42 @@
+{
+    "name": "",
+    "age": "23",
+    "salary": "60000000",
+    "gender": "male",
+    "password": "",
+    "phone": "['6294135066','9051613171']",
+    "address": {
+        "current": "",
+        "Permanent": "Siliguri"
+    },
+    "empTab": [
+        {
+            "id":"001",
+            "name": "Deep",
+            "age": "23",
+            "salary": "60000000",
+            "gender": "male"
+        },
+        {
+            "id":"002",
+            "name": "Debabrata",
+            "age": "55",
+            "salary": "120000000",
+            "gender": "male"
+        },
+        {
+            "id":"003",
+            "name": "Monika",
+            "age": "45",
+            "salary": "120000000",
+            "gender": "Female"
+        },
+        {
+            "id":"004",
+            "name": "Disha",
+            "age": "27",
+            "salary": "90000000",
+            "gender": "Female"
+        }
+    ]
+}

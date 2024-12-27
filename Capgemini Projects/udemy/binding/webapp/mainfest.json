@@ -1,0 +1,7 @@
+{
+    "_version": "1.2.0",
+    "sap.app": {
+        "id": "example.id",
+        "type": "application"
+    }
+}

@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	
+	<SelectDialog items="{toolsModel>/toolDetails}" cancel="onCancel" search="onSearch" 
+	liveChange="onSearch" confirm="onConfirm" >
+		<items>
+			<DisplayListItem value="{toolsModel>toolName}"></DisplayListItem>
+		</items>
+	</SelectDialog>
+</core:FragmentDefinition>

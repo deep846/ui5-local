@@ -1,0 +1,48 @@
+<mvc:View
+    controllerName="ui5.quickstart.controller.New"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    displayBlock="true"
+    height="100%"
+    busyIndicatorDelay="0"
+>
+    <Shell>
+        <App>
+            <pages>
+                <Page title="Menue BUtton Group">
+                    <content>
+                        <Panel headerText="Button and group">
+                            <content>
+                                <RadioButtonGroup>
+                                    <buttons>
+                                        <RadioButton text="one" />
+                                        <RadioButton text="two" />
+                                    </buttons>
+                                </RadioButtonGroup>
+
+                                <MenuButton text="This is a menue button">
+                                    <Menu title="This is the menue button">
+                                        <items>
+                                            <MenuItem
+                                                text="Hellol"
+                                                press=".onHellolMenuItemPress"
+                                            />
+                                            <MenuItem
+                                                text="Hello2"
+                                                press=".onHellolMenuItemPress"
+                                            />
+                                            <MenuItem
+                                                text="Hello3"
+                                                press=".onHellolMenuItemPress"
+                                            />
+                                        </items>
+                                    </Menu>
+                                </MenuButton>
+                            </content>
+                        </Panel>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

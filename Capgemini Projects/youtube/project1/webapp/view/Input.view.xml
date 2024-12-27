@@ -1,0 +1,37 @@
+<mvc:View
+    controllerName="ui5.quickstart.controller.Input"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    displayBlock="true"
+    height="100%"
+    busyIndicatorDelay="0">
+    <Shell>
+        <App>
+            <pages>
+                <Page title="Button - input">
+                    <content>
+                        <Panel headerText="Button and input">
+                            <content>
+                                <Button
+                                    text="{i18n>showHelloButtonText}"
+                                    press=".onSayHelloButtonPress"
+                                >
+                                    <!-- here we are accessing i18n file to access the thing written over there as a variable in showHelloButtonText
+{i18n>showHelloButtonText}
+-->
+                                </Button>
+                                <Input
+                                    value="{om>/recipent/name}"
+                                    description="hello {om>/recipent/name}"
+                                    valueLiveUpdate="true"
+                                    width="60%"
+                                />
+                                <!-- here we are accessig the json model that are attached to our view {/recipent/name} -->
+                            </content>
+                        </Panel>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

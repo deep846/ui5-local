@@ -1,0 +1,12 @@
+{
+    "name" : "",
+    "age" : "23",
+    "salary" : "60000000",
+    "gender" : "male",
+    "password" : "",
+    "phone" : "['6294135066','9051613171']",
+    "address" : {
+        "current" : "",
+        "Permanent" : "Siliguri"
+    }
+}

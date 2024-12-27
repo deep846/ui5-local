@@ -1,0 +1,12 @@
+{
+    "name" : "Deep",
+    "age" : "23",
+    "salary" : "60000000",
+    "gender" : "male",
+    "password" : "1234",
+    "phone" : "['6294135066','9051613171']",
+    "address" : {
+        "current" : "Bangalore",
+        "Permanent" : "Siliguri"
+    }
+}

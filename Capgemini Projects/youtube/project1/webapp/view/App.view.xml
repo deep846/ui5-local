@@ -1,0 +1,37 @@
+<mvc:View
+    controllerName="ui5.quickstart.controller.App"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+>
+    <!-- using sap.m library to the xml to use its controls and properties -->
+    <!-- using controller name here to attach functionality of app controller here -->
+    <!-- creating text using text property and tag -->
+
+    <Shell title="Hellllooooo" appWidthLimited="true" backgroundColor="blue">
+        <App>
+            <pages>
+                <Page title="Text Button">
+                    <content>
+                        <Panel headerText="This is text and button field" />
+                        <Text text="Hello Ui5 again" />
+                        <!-- we use button tag here to create button and use properties like text for text of the button -->
+                        <!-- and press property and pass a fucntion name so when we press a button what function do we need to open -->
+                        <Button
+                            text="Say Hi"
+                            press=".onHiiButtonPress"
+                        />
+                        <Button
+                            text="HElloo"
+                            press=".onHEllooButtonPress"
+                        />
+                        <Button
+                            text="hello vai"
+                            press=".onHelloVaiButtonPress"
+                        />
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

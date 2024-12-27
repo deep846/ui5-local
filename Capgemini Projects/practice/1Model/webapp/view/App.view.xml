@@ -1,0 +1,12 @@
+<mvc:View 
+controllerName="nm.controller.App"
+xmlns="sap.m" 
+xmlns:mvc="sap.ui.core.mvc" >
+        <Label text="Name"></Label>
+        <Input id="name" type="Text" value="{dd>/Name}"></Input>
+        <Label text="Email"></Label>
+        <Input id="email" type="Text" value="{dd>/Email}"></Input>
+        <Label text="Gender"></Label>
+        <Input id="gender" type="Text" value="{dd>/Gender}"></Input>
+        <Button text="Test" press=".onPress"></Button>
+</mvc:View>

@@ -1,0 +1,94 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="namespace.controller.View2"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.ui.layout.form">
+	<Page title="view2" showNavButton="true" navButtonPress="onPressView1">
+	    
+	    
+	     <List id="idList"  mode="SingleSelectMaster" selectionChange="onSelect">
+						<items>
+							<ObjectListItem icon="{toolsModel>image}"
+							intro="{toolsModel>id}" number="{toolsModel>price}{toolsModel>currency}"  title="{toolsModel>name}">
+								<attributes>
+									<ObjectAttribute text="{toolsModel>use}" title="use"></ObjectAttribute>
+								</attributes>
+								<firstStatus>
+									<ObjectStatus text="{toolsModel>status}" title="status"
+									state="{=${toolsModel>status}==='available'?'Success':'Error'}"></ObjectStatus>
+								</firstStatus>
+							</ObjectListItem>
+						</items>
+		</List>
+	    
+	    
+	    
+		<IconTabBar>
+			<items>
+				<IconTabFilter icon="sap-icon://information">
+					<f:SimpleForm>
+						<f:content>
+							<Label text="ID"></Label>
+							<Text text="{toolsModel>id}"></Text>
+							<Label text=" SupplierName"></Label>
+							<Text text="{toolsModel>name}"></Text>
+							<Label text="Loaction"></Label>
+							<Text text="{toolsModel>use}"></Text>
+						</f:content>
+					</f:SimpleForm>
+				</IconTabFilter>
+				<IconTabFilter icon="sap-icon://supplier">
+					
+					<Table items="{toolsModel>/toolDetails}">
+						<columns>
+							<Column>
+								<Text text="toolId"></Text>
+							</Column>
+							<Column>
+								<Text text="toolName"></Text>
+							</Column>
+							<Column>
+								<Text text="City"></Text>
+							</Column>
+								<Column>
+								<Text text="price"></Text>
+							</Column>
+							
+							<Column>
+								<Text text="Supp. Name"></Text>
+							</Column>
+							
+						
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{toolsModel>toolId}"></Text>
+									<Input value="{toolsModel>toolName}" showValueHelp="true"
+									valueHelpRequest="onF4Help"></Input>
+									<Text text="{toolsModel>supplierLocation}"></Text>
+									<Text text="{toolsModel>price}{toolsModel>currency}"></Text>
+									<Text text="{toolsModel>supplierName}"></Text>
+									
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+					
+					
+				</IconTabFilter>
+			</items>
+		</IconTabBar>
+			<footer>
+			<OverflowToolbar id="otbFooter">
+				<ToolbarSpacer/>
+				<Button type="Accept" text="Accept">
+					<layoutData><OverflowToolbarLayoutData priority="NeverOverflow" /></layoutData>
+				</Button>
+				<Button type="Reject" text="Reject">
+					<layoutData><OverflowToolbarLayoutData priority="NeverOverflow" /></layoutData>
+				</Button>
+				<OverflowToolbarButton tooltip="Delete" text="Delete" icon="sap-icon://delete"/>
+				<OverflowToolbarButton tooltip="Edit" text="Edit" icon="sap-icon://edit"/>
+				
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>

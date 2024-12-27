@@ -1,0 +1,74 @@
+<mvc:View
+    controllerName="namespace.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    displayBlock="true"
+    height="100%"
+    busyIndicatorDelay="0"
+    id="view1"
+>
+    <f:SimpleForm>
+        <f:content>
+            <Label
+                text="User"
+                required="true"
+            />
+            <Input
+                id="user"
+                type="Text"
+                required="true"
+                value="{deep>/name}"
+            />
+            <!-- value="{/phone/1}" -->
+            <Label
+                text="Password"
+                required="true"
+            />
+            <Input
+                id="pass"
+                type="Password"
+                required="true"
+                value="{deep>/password}"
+            />
+            <Button
+                text="MyButton"
+                press=".onLoad1"
+                id="idbtn1"
+            />
+        </f:content>
+    </f:SimpleForm>
+
+    <Label
+        text="User"
+        required="true"
+    />
+    <Input
+        type="Text"
+        required="true"
+        value="{dc>/address/current}"
+        id="inp1"
+    />
+    <Label
+        text="Password"
+        required="true"
+    />
+    <Input
+        type="Text"
+        required="true"
+        value="{dc>/password}"
+
+        id="inp2"
+    />
+
+    <Button
+        text="MyButton"
+        press=".onLoad"
+        id="idbtn"
+    />
+    <Button
+        text="Flip"
+        press=".flip"
+        id="idbtn3"
+    />
+</mvc:View>

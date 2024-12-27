@@ -1,0 +1,127 @@
+{
+  "tools": [
+    {
+      "id": 1,
+      "name": "Hammer",
+      "use": "Used for driving nails and general construction",
+      "price": 250,
+      "currency": "INR",
+      "image": "",
+      "status": "available",
+      "supplierId": 1
+    },
+    {
+      "id": 2,
+      "name": "Miter Saw",
+      "use": "Used for precise angled cuts in woodworking",
+      "price": 8000,
+      "currency": "INR",
+      "image": "",
+      "status": "unavailable",
+      "supplierId": 2
+    },
+    {
+      "id": 3,
+      "name": "Saw",
+      "use": "Used for cutting wood and other materials",
+      "price": 500,
+      "currency": "INR",
+      "image": "",
+      "status": "available",
+      "supplierId": 3
+    },
+    {
+      "id": 4,
+      "name": "Table Saw",
+      "use": "Used for cutting large pieces of wood",
+      "price": 12000,
+      "currency": "INR",
+      "image": "",
+      "status": "available",
+      "supplierId": 4
+    },
+    {
+      "id": 5,
+      "name": "Drill",
+      "use": "Used for drilling holes in various materials",
+      "price": 1500,
+      "currency": "INR",
+      "image": "",
+      "status": "available",
+      "supplierId": 5
+    },
+    {
+      "id": 6,
+      "name": "Battery Drill Machine",
+      "use": "Portable drilling machine powered by a battery",
+      "price": 4500,
+      "currency": "INR",
+      "image": "",
+      "status": "unavailable",
+      "supplierId": 6
+    },
+    {
+      "id": 7,
+      "name": "Angle Grinder",
+      "use": "Used for grinding, cutting, and polishing",
+      "price": 3000,
+      "currency": "INR",
+      "image": "",
+      "status": "available",
+      "supplierId": 7
+    },
+    {
+      "id": 8,
+      "name": "Tile Cutter",
+      "use": "Used for cutting tiles accurately",
+      "price": 4000,
+      "currency": "INR",
+      "image": "",
+      "status": "available",
+      "supplierId": 8
+    },
+    {
+      "id": 9,
+      "name": "Allen Key",
+      "use": "Used for tightening hex screws",
+      "price": 200,
+      "currency": "INR",
+      "image": "",
+      "status": "available",
+      "supplierId": 9
+    },
+    {
+      "id": 10,
+      "name": "Clamps Wood",
+      "use": "Used for holding pieces of wood together",
+      "price": 600,
+      "currency": "INR",
+      "image": "",
+      "status": "available",
+      "supplierId": 10
+    },
+    {
+      "id": 11,
+      "name": "Welding Machine",
+      "use": "Used for joining metal pieces together",
+      "price": 15000,
+      "currency": "INR",
+      "image": "",
+      "status": "unavailable",
+      "supplierId": 11
+    }
+  ],
+  "suppliers": [
+    { "id": 1, "name": "ABC Tools Supplier", "location": "Mumbai, India" },
+    { "id": 2, "name": "Precision Woodworks", "location": "Delhi, India" },
+    { "id": 3, "name": "Craftsmen Equipment", "location": "Bangalore, India" },
+    { "id": 4, "name": "Cutting Edge Supplies", "location": "Hyderabad, India" },
+    { "id": 5, "name": "Urban Drills", "location": "Chennai, India" },
+    { "id": 6, "name": "Power Tools Co.", "location": "Kolkata, India" },
+    { "id": 7, "name": "Angle Masters", "location": "Pune, India" },
+    { "id": 8, "name": "Tile Pros", "location": "Ahmedabad, India" },
+    { "id": 9, "name": "HexKey Supplies", "location": "Jaipur, India" },
+    { "id": 10, "name": "Clamp Creations", "location": "Lucknow, India" },
+    { "id": 11, "name": "WeldTech Systems", "location": "Cochin, India" }
+  ]
+}

@@ -1,0 +1,52 @@
+<mvc:View xmlns:table="sap.ui.table"
+	controllerName="nm.controller.view1"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+    <Page title="View Page 2" showNavButton="true" navButtonPress="onPageNavButtonPress">
+        <content>
+			<Label text="Supplier ID"></Label>
+			<Input value="{dc>id}"></Input>
+			<Label text="Supplier Name"></Label>
+			<Input value="{dc>name}"></Input>
+			<Label text="Supplier Location"></Label>
+			<Input value="{dc>location}"></Input>
+
+			<table:Table>
+				<table:columns>
+					<table:Column >
+						<table:label>
+							<Label text="Supplier ID"></Label>
+						</table:label>
+						<table:template>
+							<Text text="{dc>id}"></Text>
+						</table:template>
+						
+					</table:Column>
+					<table:Column >
+						<table:label>
+							<Label text="Supplier Name"></Label>
+						</table:label>
+						<table:template>
+							<Text text="{dc>name}"></Text>
+						</table:template>
+					</table:Column>
+					<table:Column >
+						<table:label>
+							<Label text="Supplier Location"></Label>
+						</table:label>
+						<table:template>
+							<Text text="{dc>location}"></Text>
+						</table:template>
+					</table:Column>
+					
+				</table:columns>
+				
+			</table:Table>
+		</content>
+    </Page>
+
+</mvc:View>

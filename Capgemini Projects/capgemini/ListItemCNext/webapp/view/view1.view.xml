@@ -1,0 +1,104 @@
+<mvc:View xmlns:table="sap.ui.table"
+	controllerName="nm.controller.view1"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.ui.layout.form"
+	xmlns="sap.m"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+    <Page title="View Page 2" showNavButton="true" navButtonPress="onPageNavButtonPress">
+        <content>
+
+
+			<List id="idToolsList1"  selectionChange="onToolsListSelectionChange" mode="SingleSelectMaster">
+            <items>
+
+            <ObjectListItem 
+            icon="https://www.bing.com/images/blob?bcid=S.hB1NYKeMIHqxcxoNWLuD9SqbotqVTdP38"
+            intro="{dc>id}"
+            number="{parts:[{path: 'dc>price'},{path:'dc>currency'}], formatter:'.CurrencyFormatter'}"
+            numberTextDirection="Inherit"
+            numberUnit="{dc>currency}"
+            title="{dc>name}"
+            >
+                <attributes>
+                    <ObjectAttribute text="{dc>use}" title="Use" ></ObjectAttribute>
+                </attributes>
+                <firstStatus>
+                    <ObjectStatus title="supplierId" text="{dc>supplierId}" state="Success"></ObjectStatus>
+                </firstStatus>
+                <secondStatus>
+                     <ObjectStatus title="Status" text="{dc>status}" state="{=${dc>status}==='available'?'Success':'Error'}"></ObjectStatus>
+                </secondStatus>
+            </ObjectListItem>
+            </items>
+        </List>
+
+		<IconTabBar >
+			<items>
+				<IconTabFilter icon="sap-icon://information">
+					<f:SimpleForm >
+						<f:content>
+							<Label text="ID"></Label>
+							<Text text="{dc>id}"></Text>
+							<Label text="Name"></Label>
+							<Text text="{dc>name}"></Text>
+							<Label text="Staus"></Label>
+							<Text text="{dc>status}"></Text>
+						</f:content>
+					</f:SimpleForm>
+				</IconTabFilter>
+
+
+				
+				<IconTabFilter icon="sap-icon://supplier">
+						<Table items="{dc>/toolDetails}">
+							<columns>
+								<Column >
+									<header>
+										<Text text="ID"></Text>
+									</header>
+								</Column>
+								<Column >
+									<header>
+										<Text text="Name"></Text>
+									</header>
+								</Column>
+								<Column >
+									<header>
+										<Text text="StausStaus"></Text>
+									</header>
+								</Column>
+								<Column >
+									<header>
+										<Text text="Price"></Text>
+									</header>
+								</Column>
+								<Column >
+									<header>
+										<Text text="Supplier Name"></Text>
+									</header>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem >
+									<cells>
+										<Text text="{dc>toolId}"></Text>
+										<Input id="tool" value="{dc>toolName}" showValueHelp="true" valueHelpRequest="onf4Help1"></Input>
+										<Text text="{dc>status}"></Text>
+										<Text text="{dc>currency}{dc>price}"></Text>
+										<Text text="{dc>supplierName}"></Text>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+				</IconTabFilter>
+			</items>
+		</IconTabBar>
+
+			
+		</content>
+    </Page>
+
+</mvc:View>

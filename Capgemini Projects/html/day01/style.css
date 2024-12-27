@@ -1,0 +1,95 @@
+p{
+    color: brown;
+}
+#cars{
+    color: blueviolet;
+}
+.dtl th, .dtl td{
+    color: chocolate;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: pink;
+    margin: 20px;
+    width: 500px;
+    text-align: center;
+}
+.c1{
+        height: 200px;
+        width: 200px;
+        background-color: antiquewhite;
+        align-items: center;
+        margin: 10px;
+        border-radius: 10px;
+        display: grid;
+        text-align: center;
+        justify-content: space-evenly;
+}
+.d1{
+    display: flex;
+        justify-content: center;
+}
+ 
+a[target='_blank']{
+    background-color: pink;
+    padding: 10px;
+}
+
+
+
+
+/* ........UL list........... */
+
+
+ul{
+    display: flex;
+    justify-content: right;
+}
+
+ul>li{
+    border: 2px solid black;
+    border-radius: 8px;
+    float: left;
+    background-color: orange;
+    list-style: none;
+    margin: 10px;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.td{
+    padding: 15px;
+    background-color: pink;
+    margin: 15px;
+}
+
+
+/* Footer part */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.footer1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    
+}
+.footer1 a{
+    color: bisque;
+    margin: 10px;
+    text-decoration: none;
+}
+
+#fo{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}

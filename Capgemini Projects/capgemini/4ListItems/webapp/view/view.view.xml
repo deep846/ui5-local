@@ -1,0 +1,68 @@
+<mvc:View xmlns:f="sap.f"
+    controllerName="nm.controller.view"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+>
+    <Page title="Hello world" > 
+
+    <content>
+        <List >
+            <items>
+
+            <ObjectListItem 
+            icon="https://www.bing.com/images/blob?bcid=S.hB1NYKeMIHqxcxoNWLuD9SqbotqVTdP38"
+            intro="This is a object list item"
+            number="5000"
+            numberTextDirection="Inherit"
+            numberUnit="INR"
+            title="object list item"
+            >
+                <attributes>
+                    <ObjectAttribute text="Object Attribute" title="This is a object attribute" ></ObjectAttribute>
+                </attributes>
+                <firstStatus>
+                    <ObjectStatus title="Object Status" text="Objct status text" state="Success"></ObjectStatus>
+                </firstStatus>
+                <secondStatus>
+                     <ObjectStatus title="Object Status 2" text="Objct status text 2" state="Error"></ObjectStatus>
+                </secondStatus>
+            </ObjectListItem>
+
+            <StandardListItem title="This is a first list item" 
+            icon="https://www.bing.com/images/blob?bcid=S.hB1NYKeMIHqxcxoNWLuD9SqbotqVTdP38"
+            info="This is a hammer"
+            ></StandardListItem>
+
+            <CustomListItem >
+                <Label text="Tools"></Label>
+                <Text text="for DIY"></Text>
+                <Image width="50px" height="50px" src="https://www.bing.com/images/blob?bcid=S.hB1NYKeMIHqxcxoNWLuD9SqbotqVTdP38"></Image>
+            </CustomListItem>
+
+            <DisplayListItem label="my name" value="Deep" ></DisplayListItem>
+            <FeedListItem 
+            icon="https://www.bing.com/images/blob?bcid=S.hB1NYKeMIHqxcxoNWLuD9SqbotqVTdP38"
+            info="This is a hammer"
+            sender="Deep"
+            text="This is a text hammer"
+            ></FeedListItem>
+
+            <InputListItem label="Hello">
+                <content>
+                    <Text text="This is a input field"></Text>
+                    <Input placeholder="This is this"></Input>
+                </content>
+            </InputListItem>
+
+            <NotificationListBase 
+            authorPicture="https://www.bing.com/images/blob?bcid=S.hB1NYKeMIHqxcxoNWLuD9SqbotqVTdP38" 
+            authorName="Deep"
+            showCloseButton="true"
+            title="This is a notification"
+            ></NotificationListBase>
+            </items>
+        </List>
+    </content>
+    
+    </Page>
+</mvc:View>

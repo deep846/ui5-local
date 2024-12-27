@@ -1,0 +1,130 @@
+<mvc:View
+    controllerName="namespace.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:tab="sap.ui.table"
+    displayBlock="true"
+    height="100%"
+    busyIndicatorDelay="0"
+    id="view1"
+>
+    <Shell>
+        <App>
+            <pages>
+                <Page title="Ui Table">
+                    <tab:Table rows="{dc>/empTab}">
+                        <tab:columns>
+                            <tab:Column>
+                                <tab:label>
+                                    <Label text="Id" />
+                                </tab:label>
+                                <tab:template>
+                                    <Text text="{dc>id}" />
+                                </tab:template>
+                            </tab:Column>
+                            <tab:Column>
+                                <tab:label>
+                                    <Label text="Name" />
+                                </tab:label>
+                                <tab:template>
+                                    <Text text="{dc>name}" />
+                                </tab:template>
+                            </tab:Column>
+                            <tab:Column>
+                                <tab:label>
+                                    <Label text="Age" />
+                                </tab:label>
+                                <tab:template>
+                                    <Text text="{dc>age}" />
+                                </tab:template>
+                            </tab:Column>
+                            <tab:Column>
+                                <tab:label>
+                                    <Label text="Salary" />
+                                </tab:label>
+                                <tab:template>
+                                    <Text text="{dc>salary}" />
+                                </tab:template>
+                            </tab:Column>
+                            <tab:Column>
+                                <tab:label>
+                                    <Label text="Gender" />
+                                </tab:label>
+                                <tab:template>
+                                    <Text text="{dc>gender}" />
+                                </tab:template>
+                            </tab:Column>
+                        </tab:columns>
+                    </tab:Table>
+                    <content>
+                        <Panel headerText="UI5 Table example">
+                            <f:SimpleForm>
+                                <f:content>
+                                    <Label
+                                        text="User"
+                                        required="true"
+                                    />
+                                    <Input
+                                        id="user"
+                                        type="Text"
+                                        required="true"
+                                        value="{deep>/name}"
+                                    />
+                                    <!-- value="{/phone/1}" -->
+                                    <Label
+                                        text="Password"
+                                        required="true"
+                                    />
+                                    <Input
+                                        id="pass"
+                                        type="Password"
+                                        required="true"
+                                        value="{deep>/password}"
+                                    />
+                                    <Button
+                                        text="MyButton"
+                                        press=".onLoad1"
+                                        id="idbtn1"
+                                    />
+                                </f:content>
+                            </f:SimpleForm>
+                        </Panel>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+
+    <!-- <Label
+        text="User"
+        required="true"
+    />
+    <Input
+        type="Text"
+        required="true"
+        value="{dc>/address/current}"
+        id="inp1"
+    />
+    <Label
+        text="Password"
+        required="true"
+    />
+    <Input
+        type="Text"
+        required="true"
+        value="{dc>/password}"
+        id="inp2"
+    />
+
+    <Button
+        text="MyButton"
+        press=".onLoad"
+        id="idbtn"
+    />
+    <Button
+        text="Flip"
+        press=".flip"
+        id="idbtn3"
+    /> -->
+</mvc:View>

@@ -1,0 +1,25 @@
+{
+    "family":[
+        {
+            "name" : "Deep",
+            "age" : "23",
+            "icon" : "sap-icon://male"
+        },
+        {
+            "name" : "Debabrata",
+            "age" : "55",
+            "icon" : "sap-icon://male"
+        },
+        {
+            "name" : "Monika",
+            "age" : "45",
+            "icon" : "sap-icon://female"
+        },
+        {
+            "name" : "Sananda",
+            "age" : "27",
+            "icon" : "sap-icon://female"
+        }
+
+    ]
+}
